@@ -8,7 +8,6 @@ function ready() {
         links.forEach((link) => {
             if (link.length > 0) {
                 const arr = link.split('/');
-                alert(arr[arr.length-1]);
                 userIds.push(arr[arr.length-1]);
             }
 
