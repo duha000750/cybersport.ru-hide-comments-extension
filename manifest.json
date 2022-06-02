@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Cybersport.ru: hide user comments",
+  "description": "Позволяет скрывать комментарии от определенных пользователей",
+  "version": "1.0.1",
+  "content_scripts": [
+    {
+      "matches": [ "https://www.cybersport.ru/*" ],
+      "js": ["jquery.min.js","app.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
